@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.responsive-margin {
+  margin-top: -8vh; /* Default for small screens */
+}
+
+@media (min-height: 768px) {
+  .responsive-margin {
+    margin-top: 0vh; /* For medium screens */
+  }
+}
+
+@media (min-height: 1024px) {
+  .responsive-margin {
+    margin-top: 10vh; /* For large screens */
+  }
+}
